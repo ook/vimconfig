@@ -18,6 +18,10 @@ augroup filetypedetect
 augroup END
  
 autocmd BufNewFile,BufRead *_test.rb source ~/.vim/ftplugin/shoulda.vim
+
+" define mapleader on comma
+let mapleader = ","
+
 "use \rci in normal mode to indent ruby code,should install kode ,sudo gem
 "install kode
 nmap <leader>rci :%!ruby-code-indenter<cr>
@@ -82,7 +86,11 @@ imap <M-Up> :tabn<CR>
 imap <M-Down> :tabp<CR>
 imap <c-s> <esc><c-s>
 
-colorscheme ir_black
+"colorscheme ir_black
+"colorscheme delek
+colorscheme vividchalk
+
+
 
 syntax on                 " Enable syntax highlighting
 set visualbell
@@ -108,7 +116,7 @@ inoremap <C-L> <C-O>:nohls<CR>
 nnoremap <C-B> :BufExplorer<cr>
 
 "map to fuzzy finder text mate stylez
-nnoremap <c-f> :FuzzyFinderTextMate<CR>
+nnoremap <C-f> :FuzzyFinderTextMate<CR>
 
 "map Q to something useful
 noremap Q gq
@@ -119,7 +127,8 @@ nnoremap Y y$
 map <leader>b :FuzzyFinderBuffer<CR>
 map <leader>] :FuzzyFinderMruFile<CR>
 map <leader>r :ruby finder.rescan!<CR>
-map ,t :Rake<CR>
+" map ,t :Rake<CR>
+map <leader>t :TlistToggle<CR>
 
 let g:proj_flags="imstg"
 let g:fuzzy_ceiling=20000
@@ -255,7 +264,7 @@ function! <SID>AvailableTemplates(lead, cmdline, cursorpos)
 endfunction
 
 " CTRL-R reloads the ~/.vimrc file
-nnoremap <C-R> :source ~/.vimrc
+" nnoremap <C-R> :source ~/.vimrc
 inoremap <C-R> <C-O>:source ~/.vimrc
 vnoremap <C-R> <C-C>:source ~/.vimrc
 
@@ -339,3 +348,5 @@ let NERDShutUp=1 " no more f*cking 'unknown filetype' warnings!
 
 noremap <silent> <C-F11> :RN<CR>
 
+" Toggle line numbers
+map <F2> :set nu!<CR>
