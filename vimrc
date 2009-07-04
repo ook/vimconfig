@@ -164,7 +164,10 @@ set timeoutlen=250  " Time to wait after ESC (default causes an annoying delay)
 set ts=2  " Tabs are 2 spaces
 set bs=2  " Backspace over everything in insert mode
 set shiftwidth=2  " Tabs under smart indent
-set nocp incsearch
+set nocp 
+set ignorecase
+set smartcase
+set incsearch
 set cinoptions=:0,p0,t0
 set cinwords=if,else,while,do,for,switch,case
 set formatoptions=tcqr
@@ -186,8 +189,7 @@ runtime macros/rails-toolkit.vim
 set showmatch  " Show matching brackets.
 set mat=5  " Bracket blinking.
 set list
-" Show $ at end of line and trailing space as ~
-set lcs=tab:\ \ ,extends:>,precedes:<
+set lcs=tab:\ \ ,extends:>,precedes:<,nbsp:⋅
 set novisualbell  " No blinking .
 set noerrorbells  " No noise.
 set laststatus=2  " Always show status line.
