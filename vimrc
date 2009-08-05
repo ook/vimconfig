@@ -30,9 +30,6 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-" Load matchit (% to bounce from do to end, etc.)
-runtime! plugin/matchit.vim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
  
 " Minibuffer Explorer Settings
 let g:miniBufExplMapWindowNavVim = 1
@@ -86,18 +83,12 @@ imap <M-Up> :tabn<CR>
 imap <M-Down> :tabp<CR>
 imap <c-s> <esc><c-s>
 
-"colorscheme ir_black
-"colorscheme delek
 colorscheme vividchalk
 
-
-
 syntax on                 " Enable syntax highlighting
-set visualbell
  
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
-set nonumber
  
 augroup myfiletypes
   " Clear old autocmds in group
@@ -164,7 +155,6 @@ set timeoutlen=250  " Time to wait after ESC (default causes an annoying delay)
 set ts=2  " Tabs are 2 spaces
 set bs=2  " Backspace over everything in insert mode
 set shiftwidth=2  " Tabs under smart indent
-set nocp 
 set ignorecase
 set smartcase
 set incsearch
@@ -306,14 +296,6 @@ function! OpenRailsDoc(keyword)
 endfunction
 noremap RR :call OpenRailsDoc(expand('<cword>'))<CR>
 
-" enable eclipse style moving of lines
-nmap <M-j> mz:m+<CR>`z==
-nmap <M-k> mz:m-2<CR>`z==
-imap <M-j> <Esc>:m+<CR>==gi
-imap <M-k> <Esc>:m-2<CR>==gi
-vmap <M-j> :m'>+<CR>gv=`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<CR>gv=`>my`<mzgv`yo`z
-
 set hlsearch
 
 " use ack instead of grep
@@ -324,7 +306,7 @@ set grepformat=%f:%l:%m
 command! -bar -nargs=0 SudoW   :silent exe "write !sudo tee % >/dev/null"|silent edit!
 
 " use osx 'open' to open urls
-command! -bar -nargs=1 OpenURL :!open <args>
+"command! -bar -nargs=1 OpenURL :!open <args>
 
 " http://vim.wikia.com/wiki/Smart_mapping_for_tab_completion
 function! CleverTab()
