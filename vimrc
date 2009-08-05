@@ -334,3 +334,8 @@ noremap <silent> <C-F11> :RN<CR>
 
 " Toggle line numbers
 map <F2> :set nu!<CR>
+" xterm tweak for CSApprox
+if &term == 'xterm'
+  set t_Co=256
+  let g:CSApprox_konsole = 1
+endif
