@@ -332,6 +332,7 @@ let NERDShutUp=1 " no more f*cking 'unknown filetype' warnings!
 
 noremap <silent> <C-F11> :RN<CR>
 
+set fileformat="unix"
 " Toggle line numbers
 map <F2> :set nu!<CR>
 " xterm tweak for CSApprox

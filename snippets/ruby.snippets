@@ -418,3 +418,15 @@ snippet tas
 	task :${2:task_name => [:dependent, :tasks]} do
 		${3}
 	end
+snippet dbg
+	Rails.logger.debug("${1}")
+snippet %=
+	<%= ${1} %>
+#################### migrations
+snippet ac
+	add_column :${1:table}, :${2:column name}, :${3:column type}
+#################### FactoryGirl
+snippet fact
+	Factory.define ${1:factory_name} do |${2:f}|
+		$2.${3:name}					'${4:}'
+	end
