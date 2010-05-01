@@ -21,3 +21,9 @@ colorscheme herald
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
+
+" Vim modifier is now the comma
+let mapleader = ","
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
