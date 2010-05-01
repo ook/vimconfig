@@ -18,3 +18,6 @@ set nocompatible
 
 " Schemes are in colors/ directory
 colorscheme herald
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
