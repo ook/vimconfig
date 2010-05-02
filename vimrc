@@ -27,3 +27,8 @@ let mapleader = ","
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
+
+" Search rather smart: case with brain
+set ignorecase
+set smartcase
+set incsearch
