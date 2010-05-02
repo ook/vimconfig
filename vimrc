@@ -26,7 +26,7 @@ set listchars=tab:▸\ ,eol:¬
 let mapleader = ","
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+nmap <silent><leader>l :set list!<CR>
 
 " Search rather smart: case with brain
 set ignorecase
