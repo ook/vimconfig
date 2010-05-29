@@ -7,6 +7,9 @@
 " vim to read its configuration in XDG fashion (that's
 " what I do, personnaly). You meet errors when launching
 " vim with this file? You certainly need it.
+" Oh! Errors still here? Make a symlink from the vimconfig
+" directory to ~/.vim Not very XDG, but it sucks less since
+" it's the only file in your root.
 "
 " In this file, you'll find only configuration common to
 " *EVERY* file I could edit (so it means general behavior,
