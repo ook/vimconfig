@@ -35,3 +35,17 @@ nmap <silent><leader>l :set list!<CR>
 set ignorecase
 set smartcase
 set incsearch
+
+" Status line
+set showcmd
+set statusline=
+set statusline+=%3.3n\ " buffer number
+set statusline+=%f\ " file name
+set statusline+=%h%1*%m%r%w%0* " flags
+set statusline+=\[%{strlen(&ft)?&ft:'none'}, " filetype
+set statusline+=%{strlen(&fenc)?&fenc:&enc}%{&bomb?'/bom':''}, " encoding
+set statusline+=%{&fileformat}] " file format
+set statusline+=%= " right align
+set statusline+=0x%-8B\ " current char
+set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
+set laststatus=2
