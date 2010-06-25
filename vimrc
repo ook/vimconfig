@@ -31,6 +31,9 @@ set ignorecase
 set smartcase
 set incsearch
 
+" Enable syntax highlighting
+syntax on
+
 " Status line
 set showcmd
 set statusline=
