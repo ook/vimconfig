@@ -20,7 +20,7 @@
 set nocompatible
 
 " Schemes are in colors/ directory
-colorscheme herald
+colorscheme vividchalk
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
