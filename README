@@ -1,0 +1,7 @@
+This is my vim config
+
+If you want to use it, symlink vimrc to your ~/.vimrc and the whole directory
+to ~/.vim
+
+Current mapping:
+,l	display unprintable caracters
