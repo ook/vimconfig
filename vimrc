@@ -1,15 +1,10 @@
 " vimrc by Thomas "ook? ook!" Lecavelier
 " Written from scratch and vim help files
 "
-" NB: I rather dislike distros conf, so I overwrite $VIM
-" variable to prevent system-wide configuration to run
-" before mine. It's also useful if you want to force
-" vim to read its configuration in XDG fashion (that's
-" what I do, personnaly). You meet errors when launching
-" vim with this file? You certainly need it.
-" Oh! Errors still here? Make a symlink from the vimconfig
-" directory to ~/.vim Not very XDG, but it sucks less since
-" it's the only file in your root.
+" INSTALL INSTRUCTIONS:
+" Just symlink vimrc as ~/.vimrc and the complete directory
+" as ~/.vim
+" PS: I dream that vim implements XDG…
 "
 " In this file, you'll find only configuration common to
 " *EVERY* file I could edit (so it means general behavior,
