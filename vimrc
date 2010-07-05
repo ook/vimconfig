@@ -34,6 +34,9 @@ set incsearch
 " Enable syntax highlighting
 syntax on
 
+" Enable plugins
+filetype plugin on
+
 " Status line
 set showcmd
 set statusline=
