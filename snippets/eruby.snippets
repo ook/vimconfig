@@ -1,15 +1,16 @@
-snippet part
-	<%= render :partial => '${1}' %>
-	
-snippet =
-	<%= ${1} %>
-
-snippet -
-	<%- ${1} -%>
-	
-snippet end
+snippet form
+	<%- form_for ${1:@object} do |${2:var}| -%>
+	  <%= $2${3} %>
 	<%- end -%>
 
+snippet part
+	<%= render :partial => '${1}' %>
+snippet =
+	<%= ${1} %>
+snippet -
+	<%- ${1} -%>
+snippet end
+	<%- end -%>
 snippet if
 	<%- if ${1} -%>
 	  ${2}
