@@ -20,3 +20,6 @@ setlocal encoding=utf8
 setlocal nobackup
 setlocal nowb
 setlocal noswapfile
+
+" Toggle TagList plugin
+nmap <silent><leader>j :TlistToggle<CR>
