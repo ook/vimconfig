@@ -3,5 +3,22 @@ This is my vim config
 If you want to use it, symlink vimrc to your ~/.vimrc and the whole directory
 to ~/.vim
 
+less and scss files use the css syntax highlighting
+
+snipMate is installed, see the snippets directory to known what it can do
+
 Current mapping:
+general
 ,l	display unprintable caracters
+
+ruby
+,j	open taglist view
+
+eruby
+<C-_>   complete latest opened xml/html tag
+
+html 
+<C-_>   complete latest opened xml/html tag
+
+xml
+<C-_>   complete latest opened xml/html tag
