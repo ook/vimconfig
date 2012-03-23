@@ -50,3 +50,5 @@ set statusline+=%= " right align
 set statusline+=0x%-8B\ " current char
 set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
 set laststatus=2 "Always display status as 2 lines
+
+" Command-T plugin. Auto binded to <leader>t
