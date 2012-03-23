@@ -49,4 +49,4 @@ set statusline+=%{&fileformat}] " file format
 set statusline+=%= " right align
 set statusline+=0x%-8B\ " current char
 set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
-set laststatus=2
+set laststatus=2 "Always display status as 2 lines
