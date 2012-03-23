@@ -20,3 +20,6 @@ setlocal encoding=utf8
 setlocal nobackup
 setlocal nowb
 setlocal noswapfile
+
+" Now, the scripts: closetag is soooooo helpful. Default map to <C-_>
+source ~/.vim/scripts/closetag.vim
