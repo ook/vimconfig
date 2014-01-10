@@ -37,6 +37,9 @@ syntax on
 " Enable plugins
 filetype plugin on
 
+" Want to see where I am…
+set cursorline
+
 " Status line
 set showcmd
 set statusline=
@@ -52,3 +55,9 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
 set laststatus=2 "Always display status as 2 lines
 
 " Command-T plugin. Auto binded to <leader>t
+
+" http://kien.github.com/ctrlp.vim/ fuzzy ctrl+p completer
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+" vimpowerline
+set rtp+=~/work/powerline/powerline/bindings/vim
+
