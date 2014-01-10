@@ -57,7 +57,8 @@ set laststatus=2 "Always display status as 2 lines
 " Command-T plugin. Auto binded to <leader>t
 
 " http://kien.github.com/ctrlp.vim/ fuzzy ctrl+p completer
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+"set runtimepath^=~/.vim/bundle/ctrlp.vim
+call pathogen#infect() 
 " vimpowerline
 set rtp+=~/work/powerline/powerline/bindings/vim
 
